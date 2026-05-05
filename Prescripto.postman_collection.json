@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "Prescripto Backend",
+    "_postman_id": "d3b5a2c6-1234-5678-9101-abcdef123456",
+    "description": "Collection to test Prescripto backend API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Doctor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name", "value": "Dr. Richard James", "type": "text" },
+            { "key": "email", "value": "richard@demo.com", "type": "text" },
+            { "key": "password", "value": "12345678", "type": "text" },
+            {
+              "key": "speciality",
+              "value": "General Physician",
+              "type": "text"
+            },
+            { "key": "degree", "value": "MBBS", "type": "text" },
+            { "key": "experience", "value": "4 Years", "type": "text" },
+            {
+              "key": "about",
+              "value": "Dr. Davis has a strong commitment to comprehensive care.",
+              "type": "text"
+            },
+            { "key": "fees", "value": "40", "type": "text" },
+            {
+              "key": "address",
+              "value": "{\"line1\": \"17th Cross, Richmond\", \"line2\": \"Circle, Ring Road, London\"}",
+              "type": "text"
+            },
+            {
+              "key": "image",
+              "type": "file",
+              "src": "C:/Users/YourName/Desktop/doc1.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/admin/add-doctor",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "admin", "add-doctor"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
