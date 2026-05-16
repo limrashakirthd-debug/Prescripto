@@ -12,7 +12,7 @@ const AdminContextProvider = (props) => {
     const [appointments, setAppointments] = useState([])
     const [dashData, setDashData] = useState(false)
 
-    const backendUrl = "https://prescripto-backend-hnke.onrender.com"
+    const backendUrl = "https://prescripto-back-end.onrender.com"
 
     const getAllDoctors = async() => {
 
